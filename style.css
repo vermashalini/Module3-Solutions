@@ -1,0 +1,115 @@
+:root{
+    --darkblue:#316879;
+    --orange:#f47a60;
+    --brightblue:#7fe7dc;
+    --dbrightblue:#0ee9d3;
+    --grey:#ced7d8;
+    --white:#e9e7ea;
+}
+.whole-page{
+    background-size: cover;
+  }
+body{
+    font-family: "kano", sans-serif;
+    font-weight: bold;
+  }
+.navbar{
+    background: var(--darkblue) !important;
+    display: block;
+}
+.navbar-brand{
+color: var(--orange);
+font-size: 35px;
+margin: 0 100px;
+padding: 7px 5px;
+}
+.navbar-brand.active, .navbar-brand:hover{
+background: var(--brightblue);
+transition: .5s;
+border-radius: 2px;
+}
+.navbar-toggler-icon{
+background-image: url(./Hamburger-Bright\ Blue.svg);
+}
+.navbar-toggler{
+border: none;
+box-shadow: none;
+}
+.navbar-toggler.active, .navbar-toggler:hover, .navbar-toggler:focus{
+border: 1px solid var(--brightblue);
+box-shadow: none;
+}
+.navbar-collapse{
+float: right !important;
+margin-right: 100px;
+flex-grow: 0;
+}
+.navbar-nav{
+text-align: center;
+}
+.navbar-collapsed a{
+margin: auto;
+color: var(--brightblue) !important;
+font-size: 17px;
+border-radius: 3px;
+text-decoration: none;
+background-color: var(--darkblue);
+text-align: center;
+}
+.navbar-collapsed a.active, .navbar-collapsed a:hover{
+background: var(--brightblue);
+color: var(--darkblue) !important;
+transition: .5s;
+border-radius: 3px;
+}
+.row article{
+margin: 30px 50px;
+}
+#chicken, #beef, #sushi{
+background-color: var(--darkblue);
+color: var(--white);
+margin-bottom: 50px;
+font-size: 20px;
+}
+.text-center{
+font-size: 28px;
+font-weight: bold;
+margin-top: 10px;
+}
+  @media (min-width:1200px) {
+    .navbar-collapsed{
+        display: none !important;
+    }
+  }
+  @media (min-width:992px) and (max-width:1199px) {
+    .navbar-expand-lg .navbar-collapsed {
+        display: none !important;
+    }
+    }
+  @media (min-width:768px) and (max-width:991px) {
+    .navbar-collapsed{
+      margin: 0;
+    }
+    /* .navbar-collapsed a{
+        background-color: var(--darkblue);
+        color: var(--brightblue);
+        width: 100%;
+    } */
+  }
+  @media (min-width:577px) and (max-width:767px) {
+    .navbar-collapsed{
+      margin: 0;
+    }
+    /* #collapsable-nav a { 
+        font-size: 1.2em;
+    }
+    #collapsable-nav a span { 
+        font-size: 1em;
+        margin-right: 5px;
+    } */
+  }
+  @media (max-width:576px) {
+    .navbar-collapse{
+      margin: 0;
+    }
+  }
